@@ -15,7 +15,7 @@ const NavMenu = () => {
       // console.log(e.target?.parentNode?.id);
       // console.log("id:::", e.target.id);
       if (
-        e.target.id !== "menuToggle" ||
+        e.target.id !== "menuToggle" &&
         e.target?.parentNode?.id !== "menuToggle"
       ) {
         console.log("object");
