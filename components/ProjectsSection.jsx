@@ -10,7 +10,7 @@ const ProjectsSection = () => {
           Some Projects we have embarked on for beneficiaries
         </h3>
         <div className="grid md:grid-cols-3 my-6 gap-6 text-white">
-          {projects.map((project, index) => (
+          {projects.slice(0, 3).map((project, index) => (
             <div key={index} className="rounded-lg overflow-hidden relative">
               <div
                 className={`min-h-[250px] bg-[url("/images/children-with-bread.jpg")] bg-cover bg-center bg-no-repeat `}

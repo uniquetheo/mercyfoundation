@@ -3,19 +3,37 @@
 import { navLinks } from "@/data/dummy";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { IoClose, IoMenu } from "react-icons/io5";
 
 const NavMenu = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
+
+  useEffect(() => {
+    document.addEventListener("click", (e) => {
+      // console.log(e.target?.parentNode?.id);
+      // console.log("id:::", e.target.id);
+      if (
+        e.target.id !== "menuToggle" ||
+        e.target?.parentNode?.id !== "menuToggle"
+      ) {
+        console.log("object");
+        setMenuOpen(false);
+      }
+    });
+  }, []);
+
   return (
     <div className="relative h-full ">
-      <div className="absolute md:hidden transition-all text-4xl right-0 top-[20px] ">
+      <div
+        id="menuToggle"
+        className="absolute md:hidden transition-all text-4xl right-0 top-[20px] "
+      >
         {menuOpen ? (
-          <IoClose onClick={() => setMenuOpen(false)} />
+          <IoClose id="menuToggle" onClick={() => setMenuOpen(false)} />
         ) : (
-          <IoMenu onClick={() => setMenuOpen(true)} />
+          <IoMenu id="menuToggle" onClick={() => setMenuOpen(true)} />
         )}
       </div>
       <div>

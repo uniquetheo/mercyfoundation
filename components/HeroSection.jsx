@@ -16,7 +16,7 @@ const HeroSection = () => {
             build brighter futures.
           </p>
           <p className="">Join us in creating meaningful change today.</p>
-          <div className="">
+          <div className="pb-6">
             <button className="btn btn-primary">Join the Cause</button>
           </div>
         </div>
