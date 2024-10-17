@@ -18,7 +18,7 @@ const NavBar = () => {
           </div>
         </Link>
         <NavMenu />
-        <button className="btn btn-secondary">Donate</button>
+        <button className="btn btn-secondary hidden md:block">Donate</button>
       </div>
     </section>
   );
