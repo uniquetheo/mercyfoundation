@@ -2,7 +2,7 @@ import BannerCTASection from "@/components/BannerCTA";
 import HeroSection from "@/components/HeroSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import Services from "@/components/Services";
-import SpendingSection from "@/components/Spendings";
+import StatsSection from "@/components/StatsSection";
 
 export default function Home() {
   return (
@@ -10,7 +10,7 @@ export default function Home() {
       <HeroSection />
       <Services />
       <ProjectsSection />
-      <SpendingSection />
+      <StatsSection />
       <BannerCTASection />
     </main>
   );

@@ -4,9 +4,9 @@ import React from "react";
 const HeroSection = () => {
   return (
     <section className="h-full">
-      <div className="container mx-auto px-4 sm:px-0 py-8 grid grid-cols-1 md:grid-cols-2 items-center">
-        <div className="flex flex-col gap-6 text-custom-black">
-          <h1 className="text-4xl text-balance font-bold">
+      <div className="container mx-auto px-4 sm:px-0 py-8 grid grid-cols-1 md:grid-cols-2  items-center">
+        <div className="flex flex-col gap-6 text-custom-black md:pr-2">
+          <h1 className="text-3xl sm:text-4xl text-balance font-bold">
             Transform Lives with Your Generosity
           </h1>
           <p className="">
