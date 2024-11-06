@@ -18,8 +18,8 @@ const BannerCTASection = () => {
               difference.
             </p>
             <div className="flex gap-8">
-              <button className="btn btn-primary">Join as a Volunteer</button>
-              <button className="btn btn-secondary">Donate</button>
+              <button className="btn btn-primary">Join as Today</button>
+              <button className="btn btn-secondary">Make an Impact</button>
             </div>
           </div>
         </div>
